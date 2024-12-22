@@ -14,6 +14,13 @@ app.get('/api/message', (req, res) =>{
     })
 })
 
+app.get('/api/products', (req, res) =>{
+    res.status(200).json({
+        statusbar:'success',
+        message: 'Here are all our products!'
+    })
+})
+
 app.listen(port,'0.0.0.0',()=>{
     console.log(`Server is running on port ${port}`)
 })
